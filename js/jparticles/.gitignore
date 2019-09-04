@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+npm-debug.log
+/production/maps/
+coverage
+.nyc_output
+.coveralls.yml

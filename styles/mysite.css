@@ -1,0 +1,164 @@
+/*****************************************************/
+/* GENERIC */
+/*****************************************************/
+
+html,
+body,
+header,
+.view {
+	height: 100%;
+	font-family: Montserrat;
+}
+
+@media (max-width: 740px) {
+	html,
+	body,
+	header,
+	.view {
+		height: 100vh;
+	}
+}
+
+/*****************************************************/
+/* FIRST PAGE */
+/*****************************************************/
+
+.bg1, .bg2 {
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center center;
+}
+
+.bg1 {
+	background-image: url('pictures/lines.jpg'); 
+	/*background-attachment: fixed;*/
+}
+
+.bg2 {
+	background-image: url('pictures/sec-page/1.jpg');
+	background-attachment: fixed;
+}
+
+.mainDivs {
+	border: 2px solid black;
+	padding: 3%;
+}
+
+#one {
+	transform: translate(-50px, 132px) rotate(-32.8deg);	
+	height: 121px;
+}
+
+#two {
+	transform: translate(-50px, 275px) rotate(-32.8deg);	
+	height: 123px;
+}
+
+#three {
+	transform: translate(60px, 350px) rotate(-32.8deg);
+	height: 137px;
+}
+
+#four {
+	transform: translate(180px, 445px) rotate(-32.8deg);
+	height: 142px;
+}
+
+/*****************************************************/
+/* FIRST PAGE */
+/*****************************************************/
+
+#about-me {
+/*	margin: auto;
+	width: 45vw;
+	text-align: justify;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;*/
+	transform: /*translate(-100px, 45px)*/ rotate(-6.1deg);
+	/*border: 2px solid #8f4300;*/
+}
+
+#about-me-title {
+	font-size: 3.0vw;
+	margin-bottom: 20px;
+	/*border: 2px solid black;*/
+}
+
+#about-me-para {
+	font-size: 1.65vw;
+	font-weight: 500;
+	color: #8f4300; 
+	/*border: 2px solid black;*/
+}
+
+/*//////////////////////////*/
+
+/*#bit-more {
+	margin-left: 68vw;
+	width: 30vw;
+	text-align: justify;
+	transform: translateY(-270px);
+}*/
+
+#bit-more-title {
+	font-size: 2vw;
+}
+
+#bit-more-para {
+	font-size: 1.2vw;
+	font-weight: 500;
+	color: #8f4300;
+}
+
+/*//////////////////////////*/
+
+@media screen and (min-width: 1000px){
+	#about-me-para {
+		font-size: 24px;
+	}
+}
+
+@media (min-width:800px) {
+  #about-me-para {
+    font-size: 2px;
+  }
+}
+
+@media (min-width:600px) {
+  #about-me-para {
+    font-size: 18px;
+  }
+}
+
+/*Covers the angle brackets only*/
+.cd {
+	color: #0479a8
+;} 
+
+#uni {
+	color: #c5050c;
+}
+
+/****************************************************
+/* NAVBAR */
+/*****************************************************/
+
+#personIcon {
+	width: 80px;
+	padding-bottom: 10px;
+	background: none;
+}
+
+#personIcon:hover {
+	border-bottom: 2px solid red;
+}
+
+#mainNavbar {
+	color: transparent;
+}
+
+#mainNavbar #navLinks ul {
+	color: blue;
+	font-weight: bold;
+}
