@@ -1,8 +1,19 @@
 html, body {
+	height: 100%;
 	height: 400vh;
 	scroll-behavior: smooth;
+
 	/*background: linear-gradient(180deg, #FFFFFF 50%, #000000 50%);*/
-	background-color: black;
+	background-color: white;
+}
+
+#home, #about-header, #about-body, 
+#skills-header, #skills-body, 
+#work-header , #work-body {
+	width: 100vw;
+	font-family: 'Monsterrat';
+
+	background-repeat: no-repeat; 
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
@@ -19,26 +30,29 @@ html, body {
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
 
 #home {
-	height: 100vh;
-	width: 100vw;
+	height: 120vh;
 	color: white;
+	background-position: 76% 0vh;
+	background-size: 300vw 120vh;
+	font-family: "Ubuntu";
+	background-image: url('pictures/room2.jpg');
 
-	background-repeat: no-repeat; 
-	background-size: 100vw 100vh; 
-	/*background-position: center top;*/
-	background-position: 100% -36%;
-	/*background-attachment: fixed;*/
-	background-image: url('pictures/torch.jpg');
-
-	/*clip-path: ellipse(160% 50% at 50% 30%);*/
-
-	/*border: 4px solid green;*/
+	clip-path: ellipse(145% 58% at 50% 30%);
 }
 
-/* Entire home row */
-#home .row {
+.home-bar {
+	font-family: 'Oswald';
+	letter-spacing: 3px;
+	background-color: rgba(0,0,0,0.2);
+}
+
+#home, #home .container, #home .row, .home-title {
 	width: 100vw;
-	height: 100%;
+	margin: 0 0 0 0;
+}
+
+.home-title .display-4 {
+	font-size: 60px;
 }
 
 .home-bar {
@@ -47,57 +61,59 @@ html, body {
 	background-color: rgba(0,0,0,0.25);
 }
 
-.home-bar a {
-	color: white;
+#small-bar {
+	width: 100vw;
 }
 
-.home-bar a:hover {
-	text-decoration: none;
-}
-
-/* Titles */
-.home-title {
-	height: 100%;
+#small-bar button {
+	border: none;
+	outline: none;
 	width: 100%;
 }
 
-.title-out {
-	margin-top: 18%;
+@media (max-width: 767px) {
+	.home-bar {
+		display: none !important;
+	}
+	#small-bar {
+		display: block;
+	}
 }
 
-/* Screen Icon */
-.home-title img {
-	width: 315px;
-	filter: invert(100%);
-	margin-top: -20px;
-	margin-left: -157px;
-	position: absolute;
-	z-index: -1;
+@media (min-width: 768px) {
+	#home {
+		background-position: 70% 0%;
+		background-size: 186vw 120vh;
+	}
+	.home-bar {
+		display: block;
+	}
+	#small-bar {
+		display: none;
+	}
 }
 
-/* Title inside screen */
-.title-in {
-	z-index: 0;
-	width: 250px;
-	position: absolute;
-	margin-top: 30px;
-	margin-left: 20%;
+@media (min-width: 1024px) {
+	#home {
+		background-position: 50% 0%;
+		background-size: 140vw 120vh;
+	}
+	.home-bar {
+		background-color: rgba(0,0,0,0);
+	}
+}
+
+@media (min-width: 1440px) {
+	#home {
+		background-position: 50% 0%;
+		background-size: 100vw 120vh;
+	}
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
 
 #about-header {
-	color: white;
-	margin-top: -38%;
-	background-color: black;
-
-	background-repeat: no-repeat; 
-	background-size: 70vw 100vh; 
-	background-position: center center;
-	/*background-position: 50% 60%;*/
-	background-image: url('pictures/circle.jpg');
-
-	/*border: 4px solid green;*/
+	
 }
 
 #about-body {
@@ -113,7 +129,7 @@ html, body {
 	background-position: 50% 70%;
 	background-image: url('pictures/pencil.jpg');
 
-	clip-path: ellipse(142% 50% at 50% 50%);
+	/*clip-path: ellipse(142% 50% at 50% 50%);*/
 }
 
 #about-me-para {
@@ -121,7 +137,7 @@ html, body {
 	display: inline-block;
 	font-size: 20px;
 	font-weight: 500;
-	z-index: -1;
+	/*z-index: -1;*/
 	text-align: center;
 	position: absolute;
 	margin-top: 8%;
@@ -204,7 +220,7 @@ html, body {
 	}
 	/********** ABOUT *********/
 	#about-header {
-		margin-top: -21%;
+		margin-top: 0%;
 	}
 	#about-me-para {
 		font-size: 18px;
@@ -250,7 +266,7 @@ html, body {
 	}
 	/********** ABOUT *********/
 	#about-header {
-		margin-top: -16%;
+		margin-top: 0;
 	}
 	#about-me-para {
 		width: 50vw;
