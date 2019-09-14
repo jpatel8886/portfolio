@@ -1,18 +1,8 @@
 html, body {
-	height: 100%;
+	height: 400vh;
 	scroll-behavior: smooth;
-
 	/*background: linear-gradient(180deg, #FFFFFF 50%, #000000 50%);*/
-	background-color: white;
-}
-
-#home, #about-header, #about-body, 
-#skills-header, #skills-body, 
-#work-header , #work-body {
-	width: 100vw;
-	font-family: 'Monsterrat';
-
-	background-repeat: no-repeat; 
+	background-color: black;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
@@ -30,48 +20,20 @@ html, body {
 
 #home {
 	height: 100vh;
+	width: 100vw;
 	color: white;
-	background-position: 77% 0vh;
-	background-size: 300vw 100vh;
-	background-image: url('pictures/room2.jpg');
+
+	background-repeat: no-repeat; 
+	background-size: 100vw 100vh; 
+	/*background-position: center top;*/
+	background-position: 100% -36%;
+	/*background-attachment: fixed;*/
+	background-image: url('pictures/torch.jpg');
+
+	/*clip-path: ellipse(160% 50% at 50% 30%);*/
+
+	/*border: 4px solid green;*/
 }
-
-#home .home-bar {
-	font-family: 'Oswald';
-	letter-spacing: 3px;
-	background-color: rgba(0,0,0,0.2);
-}
-
-@media (min-width: 768px) {
-	#home {
-		background-position: 60% 0%;
-		background-size: 134vw 100vh;
-	}
-}
-@media (min-width: 1024px) {
-	#home {
-		background-position: 50% 0%;
-		background-size: 100vw 100vh;
-	}
-	#home .home-bar {
-		background-color: rgba(0,0,0,0);
-	}
-}
-
-@media (min-width: 1440px) {
-	#home {
-		background-position: 50% 0%;
-		background-size: 100vw 100vh;
-	}
-}
-
-
-
-
-
-
-
-
 
 /* Entire home row */
 #home .row {
@@ -82,7 +44,7 @@ html, body {
 .home-bar {
 	height: 8vh;
 	font-size: 20px;
-	/*background-color: rgba(0,0,0,0.25);*/
+	background-color: rgba(0,0,0,0.25);
 }
 
 .home-bar a {
@@ -126,14 +88,14 @@ html, body {
 
 #about-header {
 	color: white;
-	margin-top: 0px;
+	margin-top: -38%;
 	background-color: black;
 
 	background-repeat: no-repeat; 
 	background-size: 70vw 100vh; 
 	background-position: center center;
 	/*background-position: 50% 60%;*/
-	background-image: url('pictures/torch.jpg');
+	background-image: url('pictures/circle.jpg');
 
 	/*border: 4px solid green;*/
 }
@@ -242,7 +204,7 @@ html, body {
 	}
 	/********** ABOUT *********/
 	#about-header {
-		margin-top: 0%;
+		margin-top: -21%;
 	}
 	#about-me-para {
 		font-size: 18px;
@@ -288,7 +250,7 @@ html, body {
 	}
 	/********** ABOUT *********/
 	#about-header {
-		margin-top: 0;
+		margin-top: -16%;
 	}
 	#about-me-para {
 		width: 50vw;
